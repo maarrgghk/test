@@ -41,3 +41,13 @@ p{
 .clear {
   height:50px;
 }
+
+h4 {
+  margin-bottom: 10px;
+  color: #007cc5;
+}
+.bottom-line {
+  height: 15px;
+  border-bottom: 1px solid #0bc6ff;
+  width: 90%;
+}
