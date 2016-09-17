@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= yield(:title) %> | Shire Dashboard</title>
+    <%= csrf_meta_tags %>
+    <%= stylesheet_link_tag    'application', media: 'all',
+                                              'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <!--[if lt IE 9]>
+      <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/r29/html5.min.js">
+      </script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class ="shire-header-full">
+    
+      <header class="shire-top-nav">
+      <div class="container">
+        <nav>
+          <ul class="nav navbar-nav navbar-right">
+            <li><%= link_to "Home",   '#' %></li>
+            <li><%= link_to "Background",   '#' %></li>
+            <li><%= link_to "Indicators", '#' %></li>
+              </ul>
+            <div class = "row">
+            <div class = "col-s-1"></div>
+            <div class = "col-m-10 dashboard-top-nav">
+            <span></span>
+              </div>
+            <div class = "col-s-1"></div>
+            </div>
+        <div class = "col-m-10 dashboard-logo"><img src='/assets/logo.png'></div>
+        </nav>
+      </div>
+    </header>
+    <div class="container"> 
+      <div class = "row">
+      <div class = "col-s-1"></div>
+      <div class = "col-m-10 dashboard-option-boxes">
+        <div id="choose-ccg" class ="dashboard-option-box">Choose a Provider</div>
+        <div id="choose-ccg" class ="dashboard-option-box">Choose a CCG</div>
+      </div>
+    </div>
+    </div>
+    
+      <div class="divider-bar"><span class="divider-text"><%= yield(:title) %></span></div>
+      
+    </div>
+    
+    <div class="container">
+      <%= yield %>
+    </div>
+    <div class="shire-footer">
+      <div class="copyright">© Shire 2016 All Rights Reserved</div>
+    </div>
+  </body>
+</html>

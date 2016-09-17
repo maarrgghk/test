@@ -1,0 +1,139 @@
+.shire-header-full {
+  height: 320px;
+  background: #ccc;
+  position: relative;
+}
+.shire-top-nav {
+  min-height: 100px;
+}
+nav {
+  position: relative;
+  ul {
+    list-style: none;
+    position: absolute;
+    right: 2%;
+    top: -19px;
+    li {
+      display: inline;
+      padding: 15px 0;
+      transition: all 0.1s ease;
+      cursor: pointer;
+      a{
+        font-size: 11px;
+      line-height: 40px;
+      padding: 0 17px;
+      text-decoration: none;
+      font-weight: 700;
+      font-family: arial,sans-serif;
+      text-transform: uppercase;
+      color: #007cc5;
+      transition: all 0.1s ease;
+      }
+      &:hover {
+          background-color: #007cc5;
+          a {
+            color:white;
+          }
+        }
+    }
+  }
+  .dashboard-top-nav {
+    width: 100%;
+    height: 10px;
+    position: absolute;
+    top: 40px;
+    span {
+      background: -webkit-radial-gradient(50% -3%,ellipse cover,rgba(0,0,0,.2),rgba(97,97,97,0) 40%);
+      background: radial-gradient(ellipse at 50% -3%,rgba(0,0,0,.2),rgba(97,97,97,0) 70%);
+      width: 100%;
+
+    }
+  }
+  .dashboard-logo {
+    position: absolute;
+    top: 50px;
+  }
+}
+
+.dashboard-option-boxes {
+    position: relative;
+    margin-top: 5px;
+  
+    .dashboard-option-box {
+      padding: 16px 50px 16px 25px;
+      background: white;
+      display: inline-block;
+      font-weight: 600;
+      font-size: 14px;
+      color: #007cc5;
+      text-transform: uppercase;
+      position: relative; 
+      transition: all 0.1s ease;
+      cursor: pointer;
+      &:after {
+        position: absolute;
+        content: "+";
+        right: 15px;
+        top: 10px;
+        font-size: 25px;
+      }
+      &:hover {
+          background-color: #007cc5;
+          color: white;
+      }
+      &.active {
+          background-color: #007cc5;
+          color: white;
+          &:after {
+            content: "-";
+            right: 18px;
+            top: 8px;
+        }
+      }
+    }
+  }
+.divider-bar {
+  width: 100%;
+  height: 66px;
+  position: absolute;
+  bottom: 0;
+  background-color: #007cc5;
+  color: white;
+  .divider-text {
+    font-size:37px;
+    margin: 0;
+    padding: 12px 0 13px 0;
+    top: 12px;
+    position: relative;
+    font-weight: 100;
+    left: 10%;
+  }
+}
+
+.shire-footer {
+  background-color: #007cc5;
+    height: 100px;
+    width: 100%;
+    margin-top: 35px;
+    position: relative;
+  &:before {
+      content: '';
+      width: 100%;
+      margin: auto;
+      background: -webkit-radial-gradient(50% -3%,ellipse cover,rgba(0,0,0,.2),rgba(97,97,97,0) 40%);
+      background: radial-gradient(ellipse at 50% -3%,rgba(0,0,0,.2),rgba(97,97,97,0) 70%);
+      height: 10px;
+      position: absolute;
+      bottom:30px;
+    }
+  .copyright {
+    position: absolute;
+    bottom: 0;
+    color: #abd8f1;
+    font-size: 13px;
+    margin: 0;
+    padding: 15px 0;
+    float: left;
+    left: 10%;
+  }
+}
