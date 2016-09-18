@@ -9,6 +9,7 @@
 server "my_shire_server.com", :app, :web, :db, :primary => true
 set :deploy_to, "/var/www/shire_app"
 
+config.assets.compile = true
 
 
 # role-based syntax
