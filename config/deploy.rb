@@ -1,14 +1,19 @@
+require 'capistrano/ext/multistage'
+
+set :stages, ["staging", "production"]
+set :default_stage, "staging"
+
 # config valid only for current version of Capistrano
 lock '3.6.1'
 
-set :application, 'test'
+set :application, 'shire_app'
 set :repo_url, 'https://github.com/maarrgghk/test.git'
 
 # Default branch is :master
 # ask :branch, `git rev-parse --abbrev-ref HEAD`.chomp
 
 # Default deploy_to directory is /var/www/my_app_name
-set :deploy_to, '/var/www/my_app_name'
+
 
 # Default value for :scm is :git
 set :scm, :git
@@ -17,10 +22,10 @@ set :use_sudo, false
 set :rails_env, "production"
 set :deploy_via, :copy
 
-set :user, "Mark"
+set :user, "mark"
 set :scm_passphrase, "K4tanga1"
 
-set :ssh_options, { :forward_agent => true, :port => 4321 }
+#set :ssh_options, { :forward_agent => true, :port => 4321 }
 
 default_run_options[:pty] = true
 
