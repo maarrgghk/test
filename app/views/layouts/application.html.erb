@@ -19,8 +19,8 @@
         <nav>
           <ul class="nav navbar-nav navbar-right">
             <li><%= link_to "Home",   '#' %></li>
-            <li><%= link_to "Background",   '#' %></li>
-            <li><%= link_to "Indicators", '#' %></li>
+            <li><%= link_to "Background",   background_path %></li>
+            <li><%= link_to "Indicators", indicators_path %></li>
               </ul>
             <div class = "row">
             <div class = "col-s-1"></div>
@@ -37,8 +37,45 @@
       <div class = "row">
       <div class = "col-s-1"></div>
       <div class = "col-m-10 dashboard-option-boxes">
-        <div id="choose-ccg" class ="dashboard-option-box">Choose a Provider</div>
+        <div id="choose-provider" class ="dashboard-option-box">Choose a Provider</div>
         <div id="choose-ccg" class ="dashboard-option-box">Choose a CCG</div>
+        
+        <div id="ccg-dropdown" class="dash-dropdown">
+          <select id="ccg-select">
+            <option>Option</option>
+            <option>Option</option>
+            <option>Option</option>
+            <option>Option</option>
+            <option>Option</option>
+            <option>Option</option>
+            <option>Option</option>
+            <option>Option</option>
+            <option>Option</option>
+            <option>Option</option>
+            <option>Option</option>
+            <option>Option</option>
+          </select>
+          <button class="confirm-button">Search</button>
+        </div>
+        
+        <div id="provider-dropdown" class="dash-dropdown">
+          <select id="provider-select">
+            <option>Option</option>
+            <option>Option</option>
+            <option>Option</option>
+            <option>Option</option>
+            <option>Option</option>
+            <option>Option</option>
+            <option>Option</option>
+            <option>Option</option>
+            <option>Option</option>
+            <option>Option</option>
+            <option>Option</option>
+            <option>Option</option>
+          </select>
+          <button class="confirm-button">Search</button>
+        </div>
+        
       </div>
     </div>
     </div>
