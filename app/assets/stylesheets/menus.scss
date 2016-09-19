@@ -68,6 +68,7 @@ nav {
       position: relative; 
       transition: all 0.1s ease;
       cursor: pointer;
+      width: 180px;
        -webkit-user-select: none;  /* Chrome all / Safari all */
   -moz-user-select: none;     /* Firefox all */
   -ms-user-select: none;      /* IE 10+ */
@@ -142,18 +143,25 @@ nav {
 
 .dash-dropdown {
   background: #007cc5;
-  width:60%;
-  height:100px;
+  width:514px;
+  max-width: 800px;
+  height:105px;
   z-index: 9999;
   position: absolute;
   display:none;
+  &:before {
+    background: #007cc5;
+    content: "";
+    width: 100%;
+    height:25px;
+  }
   
   &.active {
     display:block;
   }
   select {
    background: white;
-   width: 80%;
+   width: 90%;
    margin-top: 15px;
    margin-left: 15px;
    padding: 5px;
@@ -170,8 +178,11 @@ nav {
     font-size: 15px;
     border: none;
     margin: 5px;
-    margin-left: 15px;
+    margin-right: 31px;
+    font-size: 15px;
+    width:100px;
     cursor: pointer;
+    float: right;
     &:hover {
       background: #aae1fa;
     }
