@@ -14,5 +14,7 @@ class CcgsController < ApplicationController
   def show
     @ccgs = Ccg.all
     @ccg = Ccg.find(params[:id])
+    @incidence = Ccg.order('pancreatic_incidence asc')
+    @mortality = Ccg.order('pancreatic_mortality asc')
   end
 end

@@ -1,3 +1,12 @@
 // Place all the styles related to the Ccgs controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+.chart-box {
+  border: 0px solid #0bc6ff;
+  -webkit-box-sizing:border-box;
+  -moz-box-sizing:border-box;
+  -ms-box-sizing:border-box;
+  box-sizing:border-box;
+  
+}

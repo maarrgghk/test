@@ -1,6 +1,7 @@
 $( document ).ready(function() {
-    
-  console.log("poop")
+  
+  $( ".show-section" ).hide();
+  $( "#show-incidence" ).show();
   
   $( "#choose-ccg" ).click(function() {
     $( "#choose-trust" ).removeClass("active");
@@ -31,5 +32,25 @@ $( document ).ready(function() {
     $( "#constit-dropdown" ).toggleClass("active");
       event.preventDefault();
   });
+  
+  $( "#show-incidence-btn" ).click(function() {
+    $( ".show-section" ).hide();
+    $(".subnav-item").removeClass("active");
+    $( "#show-incidence" ).show();
+    $( "#show-incidence-btn" ).addClass("active");
+    $('#incidence-graph-left').highcharts().reflow();
+    $('#incidence-graph-right').highcharts().reflow();
+      event.preventDefault();
+  });
+  $( "#show-mortality-btn" ).click(function() {
+    $( ".show-section" ).hide();
+    $(".subnav-item").removeClass("active");
+    $( "#show-mortality" ).show();
+    $( "#show-mortality-btn" ).addClass("active");
+    $('#mort-graph-left').highcharts().reflow();
+    $('#mort-graph-right').highcharts().reflow();
+      event.preventDefault();
+  });
+  
   
 });

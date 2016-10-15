@@ -1,10 +1,35 @@
-<h1><%= @ccg.name%></h1>
+<div class="sub-nav">
+  <div class="container">
+    <a href="#" id="show-incidence-btn" class="subnav-item active">Incidence</a>
+    <a href="#" id="show-mortality-btn" class="subnav-item">Mortality</a>
+    <a href="#" class="subnav-item">Quality of Care</a>
+    <a href="#" class="subnav-item">Patient Experience</a>
+  </div>
+</div>
+<div class="container">
+<% provide(:title, @ccg.name) %>
+<% provide(:bg, "/assets/test-banner.png") %>
 
-<p>In England, 8080 cases of pancreatic cancer were registered in 2014, or [insert number] cases for every 100,000 of the population.</p>
-<p>In <%= @ccg.name%> there were <%= @ccg.pancreatic_incidence%> new cases of pancreatic cancer registered in 2014.</p>
+<div id="show-incidence" class="show-section active">
+  <h2>INCIDENCE OF PANCREATIC CANCER</h2>
+  <p>In England, 8080 cases of pancreatic cancer were registered in 2014, or [insert number] cases for every 100,000 of the population.</p>
+  <p>In <%= @ccg.name%> there were <%= @ccg.pancreatic_incidence%> new cases of pancreatic cancer registered in 2014.</p>
+  <div class="pure-g">
+    <div class="pure-u-lg-1-2 pure-u-md-1-1 pure-u-sm-1-1"><div class="chart-box" id="incidence-graph-left" style="width:95%; height:350px;"></div></div>
+    <div class="pure-u-lg-1-2 pure-u-sm-1-1"><div class="chart-box" id="incidence-graph-right" style="width:95%; height:350px;"></div></div>
+  </div>
+</div>
 
-<p>In England, 7913 deaths from pancreatic cancer in 2014, or [insert number] deaths for every 100,000 of the population.</p>
-<p>In <%= @ccg.name%> there were <%= @ccg.pancreatic_mortality%>  deaths from pancreatic cancer registered in 2014.</p>
+<div id="show-mortality" class="show-section">
+  <h2>MORTALITY FROM PANCREATIC CANCER</h2>
+  <p>In England, 7913 deaths from pancreatic cancer in 2014, or [insert number] deaths for every 100,000 of the population.</p>
+  <p>In <%= @ccg.name%> there were <%= @ccg.pancreatic_mortality%>  deaths from pancreatic cancer registered in 2014.</p>
+  <div class="pure-g">
+    <div class="pure-u-lg-1-2 pure-u-md-1-1 pure-u-sm-1-1"><div class="chart-box" id="mort-graph-left" style="width:95%; height:350px;"></div></div>
+    <div class="pure-u-lg-1-2 pure-u-sm-1-1"><div class="chart-box" id="mort-graph-right" style="width:95%; height:350px;"></div></div>
+  </div>
+</div>
+
 
 <%= @ccg.scn%>
 <%= @ccg.pancreatic_incidence%>
@@ -12,3 +37,107 @@
 <%= @ccg.pancreatic_mortality%>
 <%= @ccg.all_mortality%>
 <%= @ccg.stage1%>, <%= @ccg.stage2%>, <%= @ccg.stage3%>, <%= @ccg.stage4%>, <%= @ccg.stageX%>
+
+</div>
+<script>
+  
+  $(function () { 
+    var myChart = Highcharts.chart('incidence-graph-left', {
+        chart: {
+            type: 'bar',
+        },
+        title: {
+          text: "Incidence rate of all cancers compared to pancreatic cancer - 2006 to 2014"
+        },
+        xAxis: {
+          categories: ['2006','2007','2008','2009','2010','2011','2012','2013','2014']
+        },
+        yAxis: {
+            title: {
+                text: 'Incidence rate'
+            }
+        },
+        series: [ {
+            name: 'All cancers',
+      data: [135635,136804,137831,137420,138264,139951,142107,141909,143638]
+        },
+          {
+            name: 'Pancreatic cancer',
+      data: [6584,6845,6929,7146,7065,7434,7687,7546,7913]
+        }]
+    });
+});
+  
+  $(function () { 
+    var myChart = Highcharts.chart('incidence-graph-right', {
+        chart: {
+            type: 'column'
+        },
+        title: {
+          text: "Incidence of pancreatic cancer in the <%= @ccg.name%> compared to highest and lowest number of cases, 2014"
+        },
+        xAxis: {
+          categories: ['Lowest incidence - <%=@incidence.first.name%>', "<%=@ccg.name%>" , 'Highest incidence - <%=@incidence.last.name%>' ]
+        },
+        yAxis: {
+            title: {
+                text: 'Incidence'
+            }
+        },
+        series: [ {
+            name: 'Number of cases diagnosed in 2014',
+      data: [<%=@incidence.first.pancreatic_incidence%>, <%=@ccg.pancreatic_incidence%>, <%=@incidence.last.pancreatic_incidence%>]
+        }]
+    });
+});
+  
+$(function () { 
+    var myChart = Highcharts.chart('mort-graph-left', {
+        chart: {
+            type: 'bar',
+        },
+        title: {
+          text: "Mortality rate of all cancers compared to pancreatic cancer - 2006 to 2014"
+        },
+        xAxis: {
+          categories: ['2006','2007','2008','2009','2010','2011','2012','2013','2014']
+        },
+        yAxis: {
+            title: {
+                text: 'Mortality rate'
+            }
+        },
+        series: [ {
+            name: 'All cancers',
+      data: [135635,136804,137831,137420,138264,139951,142107,141909,143638]
+        },
+          {
+            name: 'Pancreatic cancer',
+      data: [6584,6845,6929,7146,7065,7434,7687,7546,7913]
+        }]
+    });
+});
+  
+  $(function () { 
+    var myChart = Highcharts.chart('mort-graph-right', {
+        chart: {
+            type: 'column'
+        },
+        title: {
+          text: "Number of death from pancreatic cancer in the <%= @ccg.name%> compared to highest and lowest number of cases, 2014"
+        },
+        xAxis: {
+          categories: ['Lowest mortality - <%=@mortality.first.name%>', "<%=@ccg.name%>" , 'Highest mortality - <%=@mortality.last.name%>' ]
+        },
+        yAxis: {
+            title: {
+                text: 'Number of deaths'
+            }
+        },
+        series: [ {
+            name: 'Number of deaths in 2014',
+      data: [<%=@mortality.first.pancreatic_mortality%>, <%=@ccg.pancreatic_mortality%>, <%=@mortality.last.pancreatic_mortality%>]
+        }]
+    });
+});
+</script>

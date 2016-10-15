@@ -189,3 +189,20 @@ nav {
     }
   }
 }
+
+.subnav-item {
+  display: block;
+  float: left;
+  color: #fff;
+  line-height: 45px;
+  padding: 0 35px 0;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  &:hover {
+    color: #007cc5;
+    background-color: white;
+  }
+  &.active{color: #007cc5;
+    background-color: white;}
+}
