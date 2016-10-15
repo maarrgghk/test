@@ -1,0 +1,210 @@
+name,scn,pancreatic_incidence,all_incidence,pancreatic_mortality,all_mortality,stage1,stage2,stage3,stage4,stageX
+NHS Airedale Wharfedale and Craven,Yorkshire and the Humber,29,7887,29,7430,0,2,0,8,14
+NHS Ashford,South East Coast ,23,7887,24,7430,0,4,2,12,8
+NHS Aylesbury Vale,Thames Valley,30,7887,29,7430,0,5,1,10,16
+NHS Barking & Dagenham,London,26,7887,19,7430,1,1,1,8,5
+NHS Barnet,London,34,7887,32,7430,2,2,3,11,6
+NHS Barnsley,Yorkshire and the Humber,54,7887,51,7430,2,1,0,21,14
+NHS Basildon and Brentwood,East of England,48,7887,40,7430,2,6,4,19,8
+NHS Bassetlaw,East Midlands,24,7887,22,7430,1,0,0,6,17
+NHS Bath and North East Somerset,South West ,35,7887,27,7430,3,4,1,7,10
+NHS Bedfordshire,East of England,58,7887,51,7430,2,4,6,30,7
+NHS Bexley,London,30,7887,44,7430,3,8,2,21,15
+NHS Birmingham CrossCity,West Midlands,84,7887,84,7430,6,10,2,40,29
+NHS Birmingham South and Central,West Midlands,17,7887,19,7430,2,4,1,10,10
+NHS Blackburn with Darwen,Greater Manchester,16,7887,20,7430,0,5,4,7,5
+NHS Blackpool,Greater Manchester,23,7887,22,7430,0,2,1,6,13
+NHS Bolton,Greater Manchester,46,7887,39,7430,3,5,8,9,8
+NHS Bracknell and Ascot,Thames Valley,20,7887,20,7430,1,0,0,8,11
+NHS Bradford City,Yorkshire and the Humber,6,7887,4,7430,0,1,0,2,1
+NHS Bradford Districts,Yorkshire and the Humber,53,7887,38,7430,2,3,3,21,9
+NHS Brent,London,25,7887,30,7430,0,3,1,17,7
+NHS Brighton & Hove,South East Coast ,36,7887,46,7430,2,0,0,24,18
+NHS Bristol,South West,49,7887,47,7430,4,7,11,24,10
+NHS Bromley,London,42,7887,39,7430,3,6,8,19,15
+NHS Bury,Greater Manchester,23,7887,21,7430,0,4,3,8,6
+NHS Calderdale,Yorkshire and the Humber,20,7887,22,7430,0,2,0,10,13
+NHS Cambridgeshire and Peterborough,East of England,135,7887,113,7430,5,17,17,74,16
+NHS Camden,London,18,7887,18,7430,3,2,0,13,3
+NHS Cannock Chase,West Midlands,23,7887,22,7430,0,2,0,9,11
+NHS Canterbury and Coastal,South East Coast ,41,7887,36,7430,0,1,8,16,20
+NHS Castle Point Rayleigh and Rochford,East of England,32,7887,25,7430,1,5,6,13,11
+NHS Central London (Westminster),London,15,7887,9,7430,1,3,1,7,4
+NHS Central Manchester,Greater Manchester,12,7887,12,7430,0,1,4,5,2
+NHS Chiltern,Thames Valley,41,7887,51,7430,2,3,3,23,23
+NHS Chorley and South Ribble,Greater Manchester,28,7887,25,7430,0,1,3,17,5
+NHS City and Hackney,London,26,7887,12,7430,2,0,0,8,2
+NHS Coastal West Sussex,South East Coast ,103,7887,105,7430,6,6,7,65,30
+NHS Corby,Greater Manchester,4,7887,6,7430,0,0,1,2,2
+NHS Coventry and Rugby,West Midlands,51,7887,48,7430,3,3,2,32,14
+NHS Crawley,South East Coast ,11,7887,10,7430,0,1,1,4,5
+NHS Croydon,London,26,7887,31,7430,3,2,4,26,5
+NHS Cumbria,Northern,82,7887,80,7430,0,6,7,45,31
+NHS Darlington,Northern,11,7887,16,7430,2,1,0,9,4
+NHS Dartford Gravesham and Swanley,South East Coast ,24,7887,38,7430,4,8,6,18,9
+NHS Doncaster,Yorkshire and the Humber,55,7887,41,7430,0,2,0,24,24
+NHS Dorset,Wessex,143,7887,164,7430,18,21,16,72,32
+NHS Dudley,West Midlands,51,7887,55,7430,3,4,1,30,18
+NHS Durham Dales Easington and Sedgefield,Northern,41,7887,37,7430,1,2,1,22,13
+NHS Ealing,London,43,7887,24,7430,0,5,2,23,6
+NHS East and North Hertfordshire,East of England,67,7887,62,7430,10,13,3,39,15
+NHS East Lancashire,Greater Manchester,50,7887,54,7430,0,7,5,25,16
+NHS East Leicestershire and Rutland,East Midlands,50,7887,52,7430,1,6,1,35,11
+NHS East Riding of Yorkshire,Yorkshire and the Humber ,59,7887,51,7430,5,10,0,30,14
+NHS East Staffordshire,West Midlands,20,7887,21,7430,0,0,0,8,11
+NHS East Surrey,South East Coast ,27,7887,28,7430,0,2,1,16,8
+NHS Eastbourne Hailsham and Seaford,South East Coast ,40,7887,41,7430,1,1,0,21,18
+NHS Eastern Cheshire,Cheshire and Merseyside,30,7887,32,7430,0,2,2,16,16
+NHS Enfield,London,40,7887,41,7430,6,1,3,25,8
+NHS Erewash,East Midlands,17,7887,16,7430,0,1,1,12,3
+NHS Fareham and Gosport,Wessex,30,7887,31,7430,2,5,5,14,19
+NHS Fylde & Wyre,Greater Manchester,46,7887,32,7430,1,4,3,11,13
+NHS Gloucestershire,South West ,106,7887,98,7430,4,10,2,61,39
+NHS Great Yarmouth & Waveney,East of England,62,7887,54,7430,1,10,10,26,1
+NHS Greater Huddersfield,Yorkshire and the Humber,27,7887,32,7430,0,3,0,13,16
+NHS Greater Preston,Greater Manchester,20,7887,16,7430,2,4,5,11,6
+NHS Greenwich,London,32,7887,27,7430,0,3,3,14,5
+NHS Guildford and Waverley,South East Coast ,23,7887,21,7430,1,1,0,22,11
+NHS Halton,Cheshire and Merseyside,19,7887,16,7430,4,5,3,7,4
+NHS Hambleton Richmondshire and Whitby,Yorkshire and the Humber,34,7887,38,7430,1,2,1,16,14
+NHS Hammersmith and Fulham,London,11,7887,19,7430,1,3,3,11,7
+NHS Hardwick,East Midlands,14,7887,22,7430,1,3,1,11,7
+NHS Haringey,London,22,7887,27,7430,1,3,4,9,6
+NHS Harrogate and Rural District,Yorkshire and the Humber,17,7887,18,7430,1,0,5,12,12
+NHS Harrow,London,23,7887,20,7430,0,1,2,20,9
+NHS Hartlepool and Stockton-on-Tees,Northern,48,7887,36,7430,0,6,3,23,12
+NHS Hastings & Rother,South East Coast ,37,7887,37,7430,1,0,1,20,19
+NHS Havering,London,19,7887,26,7430,0,6,3,11,8
+NHS Herefordshire,West Midlands,33,7887,34,7430,1,4,2,15,15
+NHS Herts Valleys,East of England,82,7887,95,7430,8,7,8,50,25
+NHS Heywood Middleton & Rochdale,Greater Manchester,24,7887,27,7430,2,2,3,6,18
+NHS High Weald Lewes Havens,South East Coast ,29,7887,22,7430,0,2,2,12,12
+NHS Hillingdon,London,41,7887,32,7430,0,2,2,20,13
+NHS Horsham and Mid Sussex,South East Coast ,28,7887,27,7430,0,1,0,13,7
+NHS Hounslow,London,17,7887,19,7430,2,0,5,11,5
+NHS Hull,Yorkshire and the Humber,45,7887,23,7430,3,6,0,13,8
+NHS Ipswich and East Suffolk,East of England,73,7887,57,7430,0,14,14,37,5
+NHS Isle of Wight,Wessex,20,7887,25,7430,0,2,3,15,4
+NHS Islington,London,20,7887,20,7430,0,2,2,12,6
+NHS Kernow,South West,109,7887,105,7430,10,19,4,59,32
+NHS Kingston,London,16,7887,16,7430,1,0,6,7,5
+NHS Knowsley,Cheshire and Merseyside,10,7887,19,7430,0,1,6,12,4
+NHS Lambeth,London,26,7887,22,7430,2,4,0,11,4
+NHS Lancashire North,Greater Manchester,21,7887,20,7430,0,5,3,11,2
+NHS Leeds North,Yorkshire and the Humber ,33,7887,40,7430,1,5,0,18,20
+NHS Leeds South and East,Yorkshire and the Humber,34,7887,35,7430,0,1,0,17,10
+NHS Leeds West,Yorkshire and the Humber,39,7887,38,7430,0,4,0,17,16
+NHS Leicester City,East Midlands,26,7887,24,7430,4,5,1,15,10
+NHS Lewisham,London,31,7887,29,7430,2,3,1,13,5
+NHS Lincolnshire East,East Midlands,41,7887,50,7430,1,0,5,14,35
+NHS Lincolnshire West,East Midlands,35,7887,34,7430,0,0,0,5,23
+NHS Liverpool,Cheshire and Merseyside,66,7887,53,7430,6,4,9,29,11
+NHS Luton,East of England,19,7887,11,7430,0,3,2,6,3
+NHS Mansfield & Ashfield,East Midlands,40,7887,31,7430,1,2,0,11,21
+NHS Medway,South East Coast ,37,7887,33,7430,2,7,5,17,7
+NHS Merton,London,34,7887,26,7430,2,2,2,13,6
+NHS Mid Essex,East of England,52,7887,57,7430,4,7,3,40,12
+NHS Milton Keynes,Thames Valley,37,7887,23,7430,0,3,0,11,15
+NHS Nene,East Midlands,91,7887,78,7430,3,7,4,46,23
+NHS Newark & Sherwood,East Midlands,18,7887,19,7430,0,1,0,9,13
+NHS Newbury and District,Thames Valley ,17,7887,20,7430,0,1,0,5,8
+NHS Newham,London,26,7887,20,7430,0,1,2,13,7
+NHS North & West Reading,Thames Valley ,15,7887,13,7430,1,1,0,3,7
+NHS North Derbyshire,East Midlands,44,7887,46,7430,5,6,9,16,11
+NHS North Durham,Northern,32,7887,42,7430,1,5,0,22,19
+NHS North East Essex,East of England,61,7887,55,7430,5,6,5,31,12
+NHS North East Hampshire and Farnham,Wessex,25,7887,24,7430,0,0,0,11,15
+NHS North East Lincolnshire,Yorkshire and the Humber ,35,7887,34,7430,0,0,1,17,12
+NHS North Hampshire,Wessex ,42,7887,34,7430,2,2,13,12,5
+NHS North Kirklees,Yorkshire and the Humber ,22,7887,21,7430,0,2,0,21,7
+NHS North Lincolnshire,East of England,34,7887,27,7430,0,1,0,14,9
+NHS North Manchester,Greater Manchester,15,7887,19,7430,1,3,2,10,3
+NHS North Norfolk,East of England,32,7887,34,7430,2,6,9,18,2
+NHS North Somerset,South West ,43,7887,38,7430,2,5,1,20,17
+NHS North Staffordshire,West Midlands,31,7887,32,7430,1,4,1,15,12
+NHS North Tyneside,Northern,28,7887,33,7430,1,7,1,17,15
+NHS North West Surrey,South East Coast ,50,7887,49,7430,1,1,0,31,25
+NHS North East West Devon,South West,159,7887,158,7430,14,18,5,80,30
+NHS Northumberland,Northern,64,7887,52,7430,2,3,4,28,18
+NHS Norwich,East of England,24,7887,21,7430,0,6,3,21,0
+NHS Nottingham City,East Midlands,42,7887,32,7430,1,0,0,10,21
+NHS Nottingham North & East,East Midlands,27,7887,22,7430,0,1,0,6,12
+NHS Nottingham West,East Midlands,14,7887,18,7430,1,2,0,9,10
+NHS Oldham,Greater Manchester,30,7887,32,7430,1,7,2,7,12
+NHS Oxfordshire,Thames Valley ,116,7887,102,7430,7,7,6,53,22
+NHS Portsmouth,Wessex,35,7887,25,7430,1,1,2,7,10
+NHS Redbridge,London,30,7887,20,7430,0,2,1,9,9
+NHS Redditch and Bromsgrove,West Midlands,20,7887,15,7430,1,7,1,7,6
+NHS Richmond,London,22,7887,18,7430,1,4,2,11,4
+NHS Rotherham,Yorkshire and the Humber,41,7887,44,7430,0,2,0,11,26
+NHS Rushcliffe,East Midlands,16,7887,11,7430,1,1,0,8,6
+NHS Salford,Greater Manchester,36,7887,38,7430,1,3,3,11,17
+NHS Sandwell and West Birmingham,West Midlands,58,7887,50,7430,3,7,5,31,22
+NHS Scarborough and Ryedale,Yorkshire and the Humber,24,7887,20,7430,1,0,1,9,4
+NHS Sheffield,Yorkshire and the Humber,84,7887,79,7430,8,8,9,38,28
+NHS Shropshire,West Midlands,60,7887,56,7430,4,4,1,27,18
+NHS Slough,Thames Valley ,14,7887,6,7430,0,0,1,3,1
+NHS Solihull,West Midlands,34,7887,37,7430,0,3,0,16,9
+NHS Somerset,South West,94,7887,85,7430,4,11,4,47,32
+NHS South Cheshire,Cheshire and Merseyside,31,7887,23,7430,3,4,2,9,14
+NHS South Devon and Torbay,South West,60,7887,43,7430,5,8,6,21,16
+NHS South East Staffs and Seisdon and Peninsular,West Midlands,33,7887,27,7430,0,3,0,18,12
+NHS South Eastern Hampshire,Wessex,27,7887,35,7430,4,5,2,22,11
+NHS South Gloucestershire,South West,42,7887,28,7430,1,0,2,22,12
+NHS South Kent Coast,South East Coast ,32,7887,36,7430,0,5,5,11,15
+NHS South Lincolnshire,East Midlands,28,7887,35,7430,3,0,2,14,12
+NHS South Manchester,Greater Manchester,10,7887,12,7430,1,2,3,4,6
+NHS South Norfolk,East of England,36,7887,41,7430,1,7,9,21,10
+NHS South Reading,Thames Valley ,10,7887,6,7430,0,1,2,4,4
+NHS South Sefton,Cheshire and Merseyside,20,7887,15,7430,0,8,2,7,3
+NHS South Tees,Northern,30,7887,29,7430,1,3,2,14,15
+NHS South Tyneside,Northern ,19,7887,25,7430,0,0,0,17,9
+NHS South Warwickshire,West Midlands,36,7887,43,7430,1,1,2,21,23
+NHS South West Lincolnshire,East of England,15,7887,28,7430,0,0,0,6,19
+NHS South Worcestershire,West Midlands,42,7887,47,7430,0,4,2,31,22
+NHS Southampton,Wessex,39,7887,33,7430,1,2,0,25,6
+NHS Southend,East of England,25,7887,29,7430,3,4,1,7,8
+NHS Southern Derbyshire,East Midlands,75,7887,63,7430,3,8,13,35,21
+NHS Southport and Formby,Cheshire and Merseyside,23,7887,22,7430,3,0,7,12,7
+NHS Southwark,London,26,7887,19,7430,1,4,3,10,6
+NHS St Helens,Cheshire and Merseyside,29,7887,25,7430,2,7,1,13,2
+NHS Stafford and Surrounds,West Midlands,28,7887,18,7430,0,4,0,14,3
+NHS Stockport,Greater Manchester,62,7887,43,7430,6,7,5,26,14
+NHS Stoke on Trent,West Midlands,48,7887,49,7430,2,5,5,21,11
+NHS Sunderland,Northern,39,7887,44,7430,0,3,0,22,15
+NHS Surrey Downs,South East Coast ,45,7887,44,7430,1,3,7,24,17
+NHS Surrey Heath,South East Coast ,6,7887,9,7430,0,1,1,9,6
+NHS Sutton,London,27,7887,22,7430,0,2,3,18,0
+NHS Swale,South East Coast ,13,7887,17,7430,0,3,1,11,9
+NHS Swindon,South West ,33,7887,24,7430,0,2,1,11,11
+NHS Tameside and Glossop,Greater Manchester,44,7887,35,7430,5,7,5,13,13
+NHS Telford & Wrekin,West Midlands,17,7887,20,7430,1,3,1,13,8
+NHS Thanet,South East Coast ,37,7887,22,7430,2,5,3,9,12
+NHS Thurrock,East of England,22,7887,17,7430,0,6,1,10,2
+NHS Tower Hamlets,London,17,7887,4,7430,1,1,0,7,6
+NHS Trafford,Greater Manchester,40,7887,24,7430,1,3,4,10,7
+NHS Vale of York,Yorkshire and the Humber,51,7887,47,7430,0,4,0,18,16
+NHS Vale Royal,Cheshire and Merseyside,20,7887,16,7430,0,6,0,10,1
+NHS Wakefield,Yorkshire and the Humber,40,7887,49,7430,0,3,1,31,19
+NHS Walsall,West Midlands,42,7887,40,7430,1,4,2,21,13
+NHS Waltham Forest,London,29,7887,26,7430,4,5,1,14,7
+NHS Wandsworth,London,24,7887,29,7430,2,5,3,17,3
+NHS Warrington,Cheshire and Merseyside,29,7887,23,7430,1,4,1,9,8
+NHS Warwickshire North,West Midlands,32,7887,27,7430,3,0,1,9,17
+NHS West Cheshire,Cheshire and Merseyside,41,7887,39,7430,2,8,6,15,8
+NHS West Essex,East of England,59,7887,45,7430,6,6,4,26,11
+NHS West Hampshire,Wessex,91,7887,104,7430,1,10,2,50,37
+NHS West Kent,South East Coast ,67,7887,66,7430,1,5,12,43,13
+NHS West Lancashire,Greater Manchester,20,7887,14,7430,0,2,1,6,3
+NHS West Leicestershire,East Midlands,44,7887,48,7430,2,5,5,27,13
+NHS West London (Kensington and Chelsea Queen's Park and Paddington),London,25,7887,27,7430,0,4,2,10,12
+NHS West Norfolk,East of England,42,7887,30,7430,2,8,10,16,0
+NHS West Suffolk,East of England,31,7887,27,7430,0,6,5,18,1
+NHS Wigan Borough,Greater Manchester,41,7887,44,7430,1,4,4,19,9
+NHS Wiltshire,South West,83,7887,67,7430,5,5,4,31,27
+NHS Windsor Ascot and Maidenhead,Thames Valley ,17,7887,19,7430,0,1,2,10,5
+NHS Wirral,Cheshire and Merseyside,67,7887,56,7430,5,5,10,27,16
+NHS Wokingham,Thames Valley ,26,7887,27,7430,3,0,0,10,14
+NHS Wolverhampton,West Midlands,48,7887,27,7430,1,5,4,15,4
+NHS Wyre Forest,West Midlands,12,7887,17,7430,1,3,1,13,9
+NHS Newcastle Gateshead,Northern,60,7887,69,7430,1,2,1,38,37

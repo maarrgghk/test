@@ -18,7 +18,7 @@
       <div class="container">
         <nav>
           <ul class="nav navbar-nav navbar-right">
-            <li><%= link_to "Home",   '#' %></li>
+            <li><%= link_to "Home",   root_path %></li>
             <li><%= link_to "Background",   background_path %></li>
             <li><%= link_to "Indicators", indicators_path %></li>
               </ul>
@@ -37,43 +37,35 @@
       <div class = "row">
       <div class = "col-s-1"></div>
       <div class = "col-m-10 dashboard-option-boxes">
-        <div id="choose-provider" class ="dashboard-option-box">Choose a Provider</div>
+        <div id="choose-constit" class ="dashboard-option-box">Choose a Constituency</div>
         <div id="choose-ccg" class ="dashboard-option-box">Choose a CCG</div>
+        <div id="choose-trust" class ="dashboard-option-box">Choose a Provider</div>
         
         <div id="ccg-dropdown" class="dash-dropdown">
-          <select id="ccg-select">
-            <option>Option</option>
-            <option>Option</option>
-            <option>Option</option>
-            <option>Option</option>
-            <option>Option</option>
-            <option>Option</option>
-            <option>Option</option>
-            <option>Option</option>
-            <option>Option</option>
-            <option>Option</option>
-            <option>Option</option>
-            <option>Option</option>
+          <select id="ccg-select" name="[ccg_id]">
+            <% Ccg.all.each do |ccg| %>
+            <option value="<%= ccg.id %>"><%= ccg.name %></option>
+            <% end %>
           </select>
-          <button class="confirm-button">Search</button>
+          <a id="ccg-confirm" class="confirm-button" href="/ccgs/1">Show CCG Data</a>
         </div>
         
-        <div id="provider-dropdown" class="dash-dropdown">
-          <select id="provider-select">
-            <option>Option</option>
-            <option>Option</option>
-            <option>Option</option>
-            <option>Option</option>
-            <option>Option</option>
-            <option>Option</option>
-            <option>Option</option>
-            <option>Option</option>
-            <option>Option</option>
-            <option>Option</option>
-            <option>Option</option>
-            <option>Option</option>
+        <div id="trust-dropdown" class="dash-dropdown">
+          <select id="ccg-trust" name="[ccg_id]">
+            <% Ccg.all.each do |ccg| %>
+            <option value="<%= ccg.id %>"><%= ccg.name %></option>
+            <% end %>
           </select>
-          <button class="confirm-button">Search</button>
+          <a id="ccg-confirm" class="confirm-button" href="/ccgs/1">Show Trust Data</a>
+        </div>
+        
+        <div id="constit-dropdown" class="dash-dropdown">
+          <select id="ccg-constituency" name="[ccg_id]">
+            <% Ccg.all.each do |ccg| %>
+            <option value="<%= ccg.id %>"><%= ccg.name %></option>
+            <% end %>
+          </select>
+          <a id="ccg-confirm" class="confirm-button" href="/ccgs/1">Show Constituency Data</a>
         </div>
         
       </div>
@@ -90,5 +82,12 @@
     <div class="shire-footer">
       <div class="copyright">© Shire 2016 All Rights Reserved</div>
     </div>
+    
+<script>
+  $("#ccg-select").change(function(){
+    $('#ccg-confirm').attr("href", "/ccgs/"+($("#ccg-select").prop('selectedIndex')+1))
+  });
+</script>
+    
   </body>
 </html>

@@ -1,0 +1,14 @@
+<h1><%= @ccg.name%></h1>
+
+<p>In England, 8080 cases of pancreatic cancer were registered in 2014, or [insert number] cases for every 100,000 of the population.</p>
+<p>In <%= @ccg.name%> there were <%= @ccg.pancreatic_incidence%> new cases of pancreatic cancer registered in 2014.</p>
+
+<p>In England, 7913 deaths from pancreatic cancer in 2014, or [insert number] deaths for every 100,000 of the population.</p>
+<p>In <%= @ccg.name%> there were <%= @ccg.pancreatic_mortality%>  deaths from pancreatic cancer registered in 2014.</p>
+
+<%= @ccg.scn%>
+<%= @ccg.pancreatic_incidence%>
+<%= @ccg.all_incidence%>
+<%= @ccg.pancreatic_mortality%>
+<%= @ccg.all_mortality%>
+<%= @ccg.stage1%>, <%= @ccg.stage2%>, <%= @ccg.stage3%>, <%= @ccg.stage4%>, <%= @ccg.stageX%>

@@ -1,6 +1,10 @@
 Rails.application.routes.draw do
     
-  root 'static_pages#background'
+  get 'ccgs/index'
+
+  resources :ccgs
+
+  root 'ccgs#index'
   
   get  '/indicators', to: 'static_pages#indicators'
   get  '/background', to: 'static_pages#background'

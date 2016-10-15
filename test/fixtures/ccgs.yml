@@ -1,0 +1,27 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  scn: MyString
+  pancreatic_incidence: 
+  all_incidence: 
+  pancreatic_mortality: 
+  all_mortality: 
+  stage1: 
+  stage2: 
+  stage3: 
+  stage4: 
+  stageX: 
+
+two:
+  name: MyString
+  scn: MyString
+  pancreatic_incidence: 
+  all_incidence: 
+  pancreatic_mortality: 
+  all_mortality: 
+  stage1: 
+  stage2: 
+  stage3: 
+  stage4: 
+  stageX: 

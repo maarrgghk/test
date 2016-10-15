@@ -1,0 +1,9 @@
+<h1>Ccgs#index</h1>
+<p>Find me in app/views/ccgs/index.html.erb</p>
+
+<% @ccgs.each do |ccg| %>
+    <ul>
+      <li><%= ccg.name %></li>
+      <li><%= link_to 'Show', ccg_path(ccg) %></li>
+    </ul>
+  <% end %>
