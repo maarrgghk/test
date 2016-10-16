@@ -51,6 +51,36 @@ $( document ).ready(function() {
     $('#mort-graph-right').highcharts().reflow();
       event.preventDefault();
   });
+  $( "#show-survival-btn" ).click(function() {
+    $( ".show-section" ).hide();
+    $(".subnav-item").removeClass("active");
+    $( "#show-survival" ).show();
+    $( "#show-survival-btn" ).addClass("active");
+    $('#survival-graph-left').highcharts().reflow();
+    $('#survival-graph-right').highcharts().reflow();
+      event.preventDefault();
+  });
+  $( "#show-experience-btn" ).click(function() {
+    $( ".show-section" ).hide();
+    $(".subnav-item").removeClass("active");
+    $( "#show-experience" ).show();
+    $( "#show-experience-btn" ).addClass("active");
+    $('#experience-graph-left').highcharts().reflow();
+    $('#experience-graph-right').highcharts().reflow();
+      event.preventDefault();
+  });
+  
+  $( "#show-quality-btn" ).click(function() {
+    $( ".show-section" ).hide();
+    $(".subnav-item").removeClass("active");
+    $( "#show-quality" ).show();
+    $( "#show-quality-btn" ).addClass("active");
+    $('#quality-graph-left-1').highcharts().reflow();
+    $('#quality-graph-left-2').highcharts().reflow();
+    $('#quality-graph-right-1').highcharts().reflow();
+    $('#quality-graph-right-2').highcharts().reflow();
+      event.preventDefault();
+  });
   
   
 });

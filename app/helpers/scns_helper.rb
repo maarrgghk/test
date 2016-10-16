@@ -1,0 +1,2 @@
+module ScnsHelper
+end

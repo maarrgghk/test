@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20161009121933) do
+ActiveRecord::Schema.define(version: 20161016133754) do
 
   create_table "ccgs", force: :cascade do |t|
     t.string   "name"
@@ -27,6 +27,13 @@ ActiveRecord::Schema.define(version: 20161009121933) do
     t.integer  "stageX"
     t.datetime "created_at",           null: false
     t.datetime "updated_at",           null: false
+  end
+
+  create_table "scns", force: :cascade do |t|
+    t.string   "name"
+    t.integer  "value"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
   end
 
 end

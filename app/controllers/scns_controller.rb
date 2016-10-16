@@ -1,0 +1,2 @@
+class ScnsController < ApplicationController
+end

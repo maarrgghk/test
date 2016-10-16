@@ -2,6 +2,8 @@ class CcgsController < ApplicationController
   
   def index
     @ccgs = Ccg.all
+    @incidence = Ccg.order('pancreatic_incidence asc')
+    @mortality = Ccg.order('pancreatic_mortality asc')
   end
   
   def create

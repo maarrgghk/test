@@ -1,9 +1,394 @@
-<h1>Ccgs#index</h1>
-<p>Find me in app/views/ccgs/index.html.erb</p>
+<div class="sub-nav">
+  <div class="container">
+    <a href="#" id="show-incidence-btn" class="subnav-item active">Incidence</a>
+    <a href="#" id="show-mortality-btn" class="subnav-item">Mortality</a>
+    <a href="#" id="show-survival-btn" class="subnav-item">Survival</a>
+    <a href="#" id="show-quality-btn" class="subnav-item">Quality of Care</a>
+    <a href="#" id="show-experience-btn" class="subnav-item">Patient Experience</a>
+  </div>
+</div>
+<div class="container">
+  <% provide(:title, 'All of England') %>
+<% provide(:bg, "/assets/test-banner.png") %>
 
-<% @ccgs.each do |ccg| %>
-    <ul>
-      <li><%= ccg.name %></li>
-      <li><%= link_to 'Show', ccg_path(ccg) %></li>
-    </ul>
-  <% end %>
+<div id="show-incidence" class="show-section active">
+  <h2>INCIDENCE OF PANCREATIC CANCER</h2>
+  <p>In England, 8080 cases of pancreatic cancer were registered in 2014, or [insert number] cases for every 100,000 of the population.</p>  
+  <div class="pure-g">
+    <div class="pure-u-lg-1-2 pure-u-md-1-1 pure-u-sm-1-1"><div class="chart-box" id="incidence-graph-left" style="width:95%; height:350px;"></div></div>
+    <div class="pure-u-lg-1-2 pure-u-sm-1-1"><div class="chart-box" id="incidence-graph-right" style="width:95%; height:350px;"></div></div>
+  </div>
+</div>
+
+<div id="show-mortality" class="show-section">
+  <h2>MORTALITY FROM PANCREATIC CANCER</h2>
+  <p>In England, 7913 deaths from pancreatic cancer in 2014, or [insert number] deaths for every 100,000 of the population.</p>
+  <div class="pure-g">
+    <div class="pure-u-lg-1-2 pure-u-md-1-1 pure-u-sm-1-1"><div class="chart-box" id="mort-graph-left" style="width:95%; height:350px;"></div></div>
+    <div class="pure-u-lg-1-2 pure-u-sm-1-1"><div class="chart-box" id="mort-graph-right" style="width:95%; height:350px;"></div></div>
+  </div>
+</div>
+  
+<div id="show-survival" class="show-section">
+  <h2>SURVIVAL RATE OF PANCREATIC CANCER</h2>
+  <div class="pure-g">
+    <div class="pure-u-lg-1-2 pure-u-md-1-1 pure-u-sm-1-1"><div class="chart-box" id="survival-graph-left" style="width:95%; height:350px;"></div></div>
+    <div class="pure-u-lg-1-2 pure-u-sm-1-1"><div class="chart-box" id="survival-graph-right" style="width:95%; height:350px;"></div></div>
+  </div>
+</div>
+
+<div id="show-quality" class="show-section">
+  <h2>QUALITY OF CARE</h2>
+  <div class="pure-g">
+    <div class="pure-u-lg-1-2 pure-u-md-1-1 pure-u-sm-1-1"><div class="chart-box" id="quality-graph-left-1" style="width:95%; height:350px;"></div></div>
+    <div class="pure-u-lg-1-2 pure-u-sm-1-1"><div class="chart-box" id="quality-graph-right-1" style="width:95%; height:350px;"></div></div>
+  </div>
+  <div class="pure-g">
+<!--    <div class="pure-u-lg-1-2 pure-u-md-1-1 pure-u-sm-1-1"><div class="chart-box" id="quality-graph-left-provider" style="width:95%; height:350px;"></div></div>-->
+    <div class="pure-u-lg-1-2 pure-u-md-1-1 pure-u-sm-1-1"><div class="chart-box" id="quality-graph-left-2" style="width:95%; height:350px;"></div></div>
+    <div class="pure-u-lg-1-2 pure-u-sm-1-1"><div class="chart-box" id="quality-graph-right-2" style="width:95%; height:350px;"></div></div>
+  </div>
+</div>
+  
+<div id="show-experience" class="show-section">
+  <h2>PATIENT EXPERIENCE</h2>
+  <div class="pure-g">
+    <div class="pure-u-lg-1-2 pure-u-md-1-1 pure-u-sm-1-1"><div class="chart-box" id="experience-graph-left" style="width:95%; height:350px;"></div></div>
+    <div class="pure-u-lg-1-2 pure-u-sm-1-1"><div class="chart-box" id="experience-graph-right" style="width:95%; height:350px;"></div></div>
+  </div>
+</div>
+  
+
+</div>
+<script>
+  
+  $(function () { 
+    var myChart = Highcharts.chart('incidence-graph-left', {
+        chart: {
+            type: 'bar',
+        },
+        title: {
+          text: "Incidence rate of all cancers compared to pancreatic cancer - 2004 to 2014"
+        },
+        xAxis: {
+          categories: ['2004','2005','2006','2007','2008','2009','2010','2011','2012','2013','2014']
+        },
+        yAxis: {
+            title: {
+                text: 'Incidence rate'
+            }
+        },
+        series: [ {
+            name: 'All cancers',
+      data: [293253,301045,309226,314408,337161,338958,351901,359020,360861,345692,409725]
+        },
+          {
+            name: 'Pancreatic cancer',
+      data: [6220,6422,6432,6401,6755,6963,7058,7276,7371,7887,8080]
+        }]
+    });
+});
+  
+  $(function () { 
+    var myChart = Highcharts.chart('incidence-graph-right', {
+        chart: {
+            type: 'area'
+        },
+        title: {
+          text: "English average incidence of pancreatic cancer compared to highest and lowest number of cases, 2014"
+        },
+        xAxis: {
+          categories: [<%@incidence.each do |mort|%>"<%=mort.name %>",<%end%>],
+          labels: {enabled: false}
+        },
+        yAxis: {
+        plotLines: [{
+        color: 'black',
+          value: 38, // Insert your average here
+        width: '2',
+        zIndex: 10 // To not get stuck below the regular plot lines
+          }],
+        title: {
+                text: 'Number of cases diagnosed in 2014'
+            }
+        },
+        series: [ {
+            name: 'Number of cases diagnosed in 2014',
+          data: [<%@incidence.each do |mort|%><%=mort.pancreatic_incidence %>,<%end%>]
+        },
+          {name: "English average",
+           data: []} ]
+    });
+});
+  
+$(function () { 
+    var myChart = Highcharts.chart('mort-graph-left', {
+        chart: {
+            type: 'bar',
+        },
+        title: {
+          text: "Mortality rate of all cancers compared to pancreatic cancer - 2006 to 2014"
+        },
+        xAxis: {
+          categories: ['2006','2007','2008','2009','2010','2011','2012','2013','2014']
+        },
+        yAxis: {
+            title: {
+                text: 'Mortality rate'
+            }
+        },
+        series: [ {
+            name: 'All cancers',
+      data: [135635,136804,137831,137420,138264,139951,142107,141909,143638]
+        },
+          {
+            name: 'Pancreatic cancer',
+      data: [6584,6845,6929,7146,7065,7434,7687,7546,7913]
+        }]
+    });
+});
+  
+  $(function () { 
+    var myChart = Highcharts.chart('mort-graph-right', {
+        chart: {
+            type: 'area'
+        },
+        title: {
+          text: "English average number of deaths from pancreatic cancer compared to highest and lowest number of cases, 2014"
+        },
+        xAxis: {
+          categories: [<%@incidence.each do |mort|%>"<%=mort.name %>",<%end%>],
+          labels: {enabled: false}
+        },
+        yAxis: {
+        plotLines: [{
+        color: 'black',
+          value: 35.55, // Insert your average here
+        width: '2',
+        zIndex: 10 // To not get stuck below the regular plot lines
+          }],
+        title: {
+                text: 'Number of deaths in 2014'
+            }
+        },
+        series: [ {
+            name: 'Number of deaths in 2014',
+                       data: [<%@mortality.each do |mort|%><%=mort.pancreatic_mortality %>,<%end%>]
+        },
+          {name: "English average",
+           data: []} ]
+    });
+});
+  
+$(function () { 
+    var myChart = Highcharts.chart('survival-graph-left', {
+        chart: {
+            type: 'column',
+        },
+        title: {
+          text: "One and five year survival for pancreatic cancer over time"
+        },
+        xAxis: {
+          categories: ['2006-2010','2007-2011','2008-2012','2009-2013']
+        },
+        yAxis: {
+            title: {
+                text: 'Age-standardised net survival (%)'
+            },
+          min: 0, max: 50
+        },
+        series: [ {
+            name: 'One-year age-standardised net survival (%)',
+      data: [18.7,19.6,20.1,21.1]
+        },{
+          name: 'Five-year age-standardised net survival (%)',
+      data: [4.1,5,5.4,5.4]}]
+    });
+});
+$(function () { 
+    var myChart = Highcharts.chart('survival-graph-right', {
+        chart: {
+            type: 'bar',
+        },
+        title: {
+          text: "One and five year survival for pancreatic cancer compared to all cancers (2009-2013)"
+        },
+        xAxis: {
+          categories: ['One-year age-standardised net survival (%)','Five-year age-standardised net survival (%)']
+        },
+        yAxis: {
+            title: {
+                text: 'Age-standardised net survival (%)'
+            },
+          min: 0, max: 100
+        },
+        series: [ {
+            name: 'All Cancers',
+      data: [68.5,49.8]
+        },{
+          name: 'Pancreatic Cancer',
+      data: [21.1,5.4]}]
+    });
+});
+$(function () { 
+    var myChart = Highcharts.chart('experience-graph-left', {
+        chart: {
+            type: 'bar',
+        },
+        title: {
+          text: "Percentage of patients who felt that there were always or nearly enough nurses on duty to care for them in hospital (regional average)"
+        },
+        xAxis: {
+          categories: ['Cheshire and Merseyside','East Midlands','East of England','Greater Manchester, Lancashire and South Cumbria','London','Northern','South East Coast','South West','Thames Valley','Wessex','West Midlands','Yorkshire and the Humber']
+        },
+        yAxis: {
+            title: {
+                text: 'Regional Average (%)'
+            },
+          min: 0, max: 100
+        },
+        series: [ {
+            name: 'Regional Average (%)',
+      data: [64.7,59.3,56.6,58.1,77.6,66.8,72.1,65.4,64.6,74.1,58.2,52.6]
+        }]
+    });
+});
+$(function () { 
+    var myChart = Highcharts.chart('experience-graph-right', {
+        chart: {
+            type: 'bar',
+        },
+        title: {
+          text: "Percentage of patients who felt that there were always or nearly enough nurses on duty to care for them in hospital (regional average)"
+        },
+        xAxis: {
+          categories: ['Cheshire and Merseyside','East Midlands','East of England','Greater Manchester, Lancashire and South Cumbria','London','Northern','South East Coast','South West','Thames Valley','Wessex','West Midlands','Yorkshire and the Humber']
+        },
+        yAxis: {
+            title: {
+                text: 'Regional Percentage (%)'
+            },
+          min: 0, max: 100
+        },
+        series: [ {
+            name: 'Regional Percentage (%)',
+      data: [83.9,79.6,82.9,82.1,84.1,81.7,80.5,89.3,76.9,87.1,82,80.4]
+        }]
+    });
+});
+$(function () { 
+    var myChart = Highcharts.chart('quality-graph-left-1', {
+        chart: {
+            type: 'bar',
+        },
+        title: {
+          text: "Percentage diagnosed by an emergency route in England (all cancers compared to pancreatic cancers) (2006-2013)"
+        },
+        xAxis: {
+          categories: ['Accident and Emergency','GP Referral','Inpatient Emergency','Outpatient Emergency']
+        },
+        yAxis: {
+            title: {
+                text: 'Percentage diagnosed (%)'
+            },
+          min: 0, max: 100
+        },
+        series: [ {
+            name: 'All Cancers',
+      data: [60,25,4,10]
+        },{
+            name: 'Pancreatic Cancer',
+      data: [56,33,4,7]
+        }]
+    });
+});
+ $(function () { 
+    var myChart = Highcharts.chart('quality-graph-right-1', {
+        chart: {
+            type: 'area'
+        },
+        title: {
+          text: "Percentage of pancreatic cancer patients diagnosed through emergency presentation (Strategic Clinical Network)"
+        },
+        xAxis: {
+          categories: [<%Scn.order('value asc').each do |scn|%>"<%=scn.name %>",<%end%>],
+          labels: {enabled: false}
+        },
+        yAxis: {
+        plotLines: [{
+        color: 'black',
+          value: <%= Scn.find_by_name('All England').value %>, // Insert your average here
+        width: '2',
+        zIndex: 10 // To not get stuck below the regular plot lines
+          }],
+        title: {
+                text: 'Percentage diagnosed'
+            }
+        },
+        series: [ {
+            name: 'Percentage diagnosed through emergency presentation',
+          data: [<%Scn.order('value asc').each do |scn|%><%=scn.value %>,<%end%>]
+        },
+          {name: "All England",
+           data: []} ]
+    });
+});
+$(function () { 
+    var myChart = Highcharts.chart('quality-graph-left-2', {
+        chart: {
+            type: 'column',
+        },
+        title: {
+          text: "Number diagnosed at each stage in the CCG compared to highest and lowest number of cases"
+        },
+        xAxis: {
+          categories: ['Total diagnosed in England']
+        },
+        yAxis: {
+            title: {
+                text: 'Number Diagnosed'
+            },
+        },
+        series: [ {
+            name: 'Stage 1',
+          data: [<%=@ccgs.pluck(:stage1).sum%>]
+        },{
+            name: 'Stage 2',
+            data: [<%=@ccgs.pluck(:stage2).sum%>]
+        },{
+            name: 'Stage 3',
+            data: [<%=@ccgs.pluck(:stage3).sum%>]
+        },{  
+            name: 'Stage 4',
+            data: [<%=@ccgs.pluck(:stage4).sum%>]
+        },{  name: 'No stage',
+            data: [<%=@ccgs.pluck(:stageX).sum%>]
+        }]
+    });
+});
+$(function () { 
+    var myChart = Highcharts.chart('quality-graph-right-2', {
+        chart: {
+            type: 'bar',
+        },
+        title: {
+          text: "Number diagnosed at each stage in England (all cancers compared to pancreatic cancer) (2014)"
+        },
+        xAxis: {
+          categories: ['Stage 1',"Stage 2",'Stage 3','Stage 4','No Stage']
+        },
+        yAxis: {
+            title: {
+                text: 'Number diagnosed'
+            },
+        },
+        series: [ {
+            name: 'All Cancers',
+      data: [73653,48808,42209,60346,71590]
+        },{
+            name: 'Pancreatic Cancer',
+      data: [359,811,593,3829,2481]
+        }]
+    });
+});
+</script>
