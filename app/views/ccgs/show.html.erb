@@ -364,7 +364,7 @@ $(function () {
             name: 'Stage 4',
             data: [<%=Ccg.order("stage4 asc").first.stage4%>,<%=@ccg.stage4%>,<%=Ccg.order("stage4 asc").last.stage4%>]
         },{  name: 'No stage',
-           data: [<%=Ccg.order("stage4 asc").first.stage4%>,<%=@ccg.stage4%>,<%=Ccg.order("stage4 asc").last.stage4%>]
+           data: [<%=Ccg.order("nostage asc").first.nostage%>,<%=@ccg.nostage%>,<%=Ccg.order("nostage asc").last.nostage%>]
         }]
     });
 });

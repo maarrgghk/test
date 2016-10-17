@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20161016133754) do
+ActiveRecord::Schema.define(version: 20161016174232) do
 
   create_table "ccgs", force: :cascade do |t|
     t.string   "name"
@@ -24,7 +24,7 @@ ActiveRecord::Schema.define(version: 20161016133754) do
     t.integer  "stage2"
     t.integer  "stage3"
     t.integer  "stage4"
-    t.integer  "stageX"
+    t.integer  "nostage"
     t.datetime "created_at",           null: false
     t.datetime "updated_at",           null: false
   end
