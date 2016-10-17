@@ -362,7 +362,7 @@ $(function () {
             name: 'Stage 4',
             data: [<%=@ccgs.pluck(:stage4).sum%>]
         },{  name: 'No stage',
-            data: [<%=@ccgs.pluck(:stageX).sum%>]
+           data: [<%=@ccgs.pluck(:nostage).sum%>]
         }]
     });
 });
