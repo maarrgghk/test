@@ -1,5 +1,5 @@
 .shire-header-full {
-  height: 320px;
+  height: 345px;
   position: relative;
 }
 .shire-top-nav {
@@ -50,12 +50,14 @@ nav {
     position: absolute;
     top: 50px;
     color: #007cc5;
+    left: 25px;
+    text-indent: -25px;
   }
 }
 
 .dashboard-option-boxes {
     position: relative;
-    margin-top: 5px;
+    margin-top: 25px;
   
     .dashboard-option-box {
       padding: 16px 50px 16px 25px;
@@ -205,4 +207,16 @@ nav {
   }
   &.active{color: #007cc5;
     background-color: white;}
+}
+
+.src-text {
+  margin: auto;
+  text-align: center;
+  span{
+  
+  font-size: 12px;
+  font-style: italic;
+  
+  color: #a3a3a3;
+  }
 }
