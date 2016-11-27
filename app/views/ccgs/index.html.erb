@@ -9,7 +9,7 @@
 </div>
 <div class="container">
   <% provide(:title, 'All of England') %>
-<% provide(:bg, "/assets/test-banner.png") %>
+<!--<provide(:bg, "/assets/test-banner.png") %>-->
 
 <div id="show-incidence" class="show-section active">
   <h2>INCIDENCE OF PANCREATIC CANCER</h2>
@@ -70,7 +70,8 @@
         title: {
           text: "Incidence rate of all cancers compared to pancreatic cancer - 2004 to 2014"
         },
-        xAxis: {
+        xAxis: {  
+          
           categories: ['2004','2005','2006','2007','2008','2009','2010','2011','2012','2013','2014']
         },
         yAxis: {
@@ -99,6 +100,9 @@
           text: "English average incidence of pancreatic cancer compared to highest and lowest number of cases, 2014"
         },
         xAxis: {
+          title: {
+            text: "CCG"
+          },
           categories: [<%@incidence.each do |mort|%>"<%=mort.name %>",<%end%>],
           labels: {enabled: false}
         },
@@ -159,6 +163,9 @@ $(function () {
           text: "English average number of deaths from pancreatic cancer compared to highest and lowest number of cases, 2014"
         },
         xAxis: {
+          title: {
+            text: "CCG"
+          },
           categories: [<%@incidence.each do |mort|%>"<%=mort.name %>",<%end%>],
           labels: {enabled: false}
         },
@@ -242,6 +249,9 @@ $(function () {
           text: "Percentage of patients who felt that there were always or nearly enough nurses on duty to care for them in hospital (regional average)"
         },
         xAxis: {
+          title: {
+            text: "Region average (%)"
+          },
           categories: ['Cheshire and Merseyside','East Midlands','East of England','Greater Manchester, Lancashire and South Cumbria','London','Northern','South East Coast','South West','Thames Valley','Wessex','West Midlands','Yorkshire and the Humber']
         },
         yAxis: {
@@ -265,6 +275,7 @@ $(function () {
           text: "Percentage of patients who felt that there were always or nearly enough nurses on duty to care for them in hospital (regional average)"
         },
         xAxis: {
+          
           categories: ['Cheshire and Merseyside','East Midlands','East of England','Greater Manchester, Lancashire and South Cumbria','London','Northern','South East Coast','South West','Thames Valley','Wessex','West Midlands','Yorkshire and the Humber']
         },
         yAxis: {
@@ -315,6 +326,9 @@ $(function () {
           text: "Percentage of pancreatic cancer patients diagnosed through emergency presentation (Strategic Clinical Network)"
         },
         xAxis: {
+          title: {
+            text: "Strategic Clinical Network"
+          },
           categories: [<%Scn.order('value asc').each do |scn|%>"<%=scn.name %>",<%end%>],
           labels: {enabled: false}
         },
@@ -346,6 +360,9 @@ $(function () {
           text: "Number diagnosed at each stage in the CCG compared to highest and lowest number of cases"
         },
         xAxis: {
+          title: {
+            text: "Area"
+          },
           categories: ['Total diagnosed in England']
         },
         yAxis: {
@@ -379,6 +396,9 @@ $(function () {
           text: "Number diagnosed at each stage in England (all cancers compared to pancreatic cancer) (2014)"
         },
         xAxis: {
+          title: {
+            text: "Stage of diagnosis"
+          },
           categories: ['Stage 1',"Stage 2",'Stage 3','Stage 4','No Stage']
         },
         yAxis: {

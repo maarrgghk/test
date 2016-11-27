@@ -1,5 +1,5 @@
 .shire-header-full {
-  height: 345px;
+  height: auto;
   position: relative;
 }
 .shire-top-nav {
@@ -99,7 +99,7 @@ nav {
 .divider-bar {
   width: 100%;
   height: 66px;
-  position: absolute;
+//  position: absolute;
   bottom: 0;
   background-color: #007cc5;
   color: white;
@@ -148,7 +148,7 @@ nav {
   max-width: 800px;
   height:105px;
   z-index: 9999;
-  position: absolute;
+//  position: absolute;
   display:none;
   &:before {
     background: #007cc5;
